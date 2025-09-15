@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.enClase;
 
 public class EjercicioInicial {
     /* Escriba un programa en Java donde se declaren las variables:
