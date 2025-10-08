@@ -6,7 +6,7 @@ public class ejercicio6 {
     public static void main(String[] args) {
         int[] vector = new int[10];
         for (int i = 0; i < vector.length; i++) {
-            vector [i] = 10-i;
+            vector [i] = vector.length-i;
 
         }
         for (int i = 0; i < vector.length; i++) {
