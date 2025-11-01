@@ -1,6 +1,6 @@
 package guia4;
 
-public class Tiempo {
+public class  Tiempo {
     int dias;
     int horas;
     int minutos;

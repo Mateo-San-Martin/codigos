@@ -21,5 +21,4 @@ public class VehiculoMain {
         velocidad = velocidad - 10;
         return velocidad;
     }
-
 }

@@ -2,8 +2,6 @@ package guia4;
 
 public class AsignaturaMain {
     public static void main(String[] args) {
-        Asignatura asignatura = new Asignatura("a", 7);
-        System.out.println(estaAprobada(asignatura.calificacion));
 
     }
     public static boolean estaAprobada(int calificacion){

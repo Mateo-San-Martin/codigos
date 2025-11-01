@@ -1,8 +1,8 @@
 package guia4;
 
 public class Asignatura {
-    String nombre;
-    int calificacion;
+    private String nombre;
+    private int calificacion;
 
     public Asignatura(String nombre, int calificacion) {
         this.nombre = nombre;
@@ -16,4 +16,30 @@ public class Asignatura {
     public boolean estaAprobada(){
         return calificacion > 6;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setCalificacion(int calificacion) {
+        if(calificacion<0){
+            throw new IllegalArgumentException("La nota minima asignable es 10");
+        }
+        if (calificacion > 10){
+            throw new IllegalArgumentException("La nota maxima asignable es 10");
+        }
+        this.calificacion = calificacion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getCalificacion() {
+        return calificacion;
+    }
 }
+
+
+//Modificar la clase Asignatura para que sus atributos sean privados. Implementar métodos getters
+//para ambos atributos y un setter para la calificación que valide que esté entre 1 y 10.

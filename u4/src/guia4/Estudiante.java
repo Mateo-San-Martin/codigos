@@ -9,13 +9,13 @@ public class Estudiante {
     public double calcularPromedio() {
         double suma = 0;
         for (int i = 0; i < materias.length ; i++) {
-            suma += materias[i].calificacion;
+            suma += materias[i].getCalificacion();
         }
         return suma / materias.length;
     }
     public void estadoDeLasMaterias(){
         for (int i = 0; i < materias.length; i++) {
-            System.out.printf("Materia:%s Aprobada:%b \n", materias[i].nombre, materias[i].estaAprobada());
+            System.out.printf("Materia:%s Aprobada:%b \n", materias[i].getNombre(), materias[i].estaAprobada());
 
 
         }
