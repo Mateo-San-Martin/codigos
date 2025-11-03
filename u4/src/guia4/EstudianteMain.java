@@ -4,12 +4,6 @@ public class EstudianteMain {
     public static void main(String[] args) {
         Estudiante estudiante = new Estudiante();
         estudiante.nombre = "Mateo San Martín";
-        estudiante.materias = new Asignatura[4];
-
-        estudiante.materias[0] = new Asignatura("algo", 7);
-        estudiante.materias[1] = new Asignatura("algo2", 8);
-        estudiante.materias[2] = new Asignatura("algo3", 9);
-        estudiante.materias[3] = new Asignatura("algo4", 10);
 
         System.out.println("Promedio: " + estudiante.calcularPromedio());
         estudiante.estadoDeLasMaterias();

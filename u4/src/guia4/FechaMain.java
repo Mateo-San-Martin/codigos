@@ -12,5 +12,7 @@ public class FechaMain {
         fecha2.año = 2026;
         System.out.println(fecha2.diaHasta(fecha1));
         System.out.println(fecha1.diaEntreFechas(fecha1,fecha2));
+        DiaSemana dia = fecha1.diaDeLaSemana();
+        System.out.println(dia);
     }
 }

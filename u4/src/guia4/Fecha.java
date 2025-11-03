@@ -1,9 +1,9 @@
 package guia4;
 
 public class Fecha {
-    int dia = 1;
-    int mes = 11;
-    int año = 2026;
+    int dia;
+    int mes;
+    int año;
 
     public int diaHasta(Fecha fecha){
         int dias = 0;
@@ -18,6 +18,10 @@ public class Fecha {
         dias += (fecha2.mes - fecha1.mes) * 30;
         dias += (fecha2.dia - fecha1.dia);
         return dias;
+    }
+    public DiaSemana diaDeLaSemana() {
+        int numero = (dia - 1) % 7;
+        return DiaSemana.values()[numero];
     }
 }
 
