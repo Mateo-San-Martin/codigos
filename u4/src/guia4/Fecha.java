@@ -1,9 +1,9 @@
 package guia4;
 
 public class Fecha {
-    int dia;
-    int mes;
-    int año;
+    private int dia;
+    private int mes;
+    private int año;
 
     public int diaHasta(Fecha fecha){
         int dias = 0;
@@ -22,6 +22,31 @@ public class Fecha {
     public DiaSemana diaDeLaSemana() {
         int numero = (dia - 1) % 7;
         return DiaSemana.values()[numero];
+    }
+
+    public int getDia() {
+        return dia;
+    }
+
+    public Mes getMes() {
+        int numero = mes;
+        return Mes.values()[mes - 1];
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public void setAño(int año) {
+        this.año = año;
     }
 }
 
