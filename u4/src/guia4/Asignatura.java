@@ -8,6 +8,10 @@ public class Asignatura {
         this.nombre = nombre;
         this.calificacion = calificacion;
     }
+    public Asignatura(String nombre) {
+        this.nombre = nombre;
+        this.calificacion = 7;
+    }
 
     @Override
     public String toString() {
@@ -37,6 +41,9 @@ public class Asignatura {
 
     public int getCalificacion() {
         return calificacion;
+    }
+    public static boolean estaAprobada(int calificacion){
+        return calificacion > 6;
     }
 }
 

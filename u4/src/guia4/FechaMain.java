@@ -10,7 +10,7 @@ public class FechaMain {
         fecha2.dia = 17;
         fecha2.mes = 1;
         fecha2.año = 2026;
-
         System.out.println(fecha2.diaHasta(fecha1));
+        System.out.println(fecha1.diaEntreFechas(fecha1,fecha2));
     }
 }

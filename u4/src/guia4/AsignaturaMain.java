@@ -4,10 +4,6 @@ public class AsignaturaMain {
     public static void main(String[] args) {
 
     }
-    public static boolean estaAprobada(int calificacion){
-        return calificacion > 6;
-    }
-
 }
 
 //Crear una clase Asignatura con atributos nombre y calificación.

@@ -1,6 +1,10 @@
 package guia4;
 
+import java.util.ArrayList;
+
 public class Resistor {
+
+
     private double resistencia;
 
     public static double calcularEquivalenteSerie(Resistor[] resistor){
@@ -24,6 +28,21 @@ public class Resistor {
 
     public double getResistencia() {
         return resistencia;
+    }
+
+    public double calcularEquivalenteSerie(ArrayList<Resistor>resistors){
+        double total = 0;
+        for (int i = 0; i < resistors.size(); i++) {
+            total += resistors.get(i).getResistencia();
+        }
+        return total;
+    }
+    public static double calcularEquivalenteParalelo(ArrayList<Resistor>resistors){
+        double total = 0;
+        for (int i = 0; i < resistors.size(); i++) {
+            total +=resistors.get(i).getResistencia();
+        }
+        return 1.0/total;
     }
 }
 

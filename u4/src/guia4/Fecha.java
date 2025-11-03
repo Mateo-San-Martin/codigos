@@ -12,6 +12,13 @@ public class Fecha {
         dias += (this.dia - fecha.dia);
         return dias;
     }
+    public int diaEntreFechas(Fecha fecha1, Fecha fecha2){
+        int dias = 0;
+        dias += (fecha2.año - fecha1.año) * 365;
+        dias += (fecha2.mes - fecha1.mes) * 30;
+        dias += (fecha2.dia - fecha1.dia);
+        return dias;
+    }
 }
 
 //Crear una clase Fecha con atributos atributos enteros día, mes y un atributo del tipo Año. Agregar

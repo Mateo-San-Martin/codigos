@@ -5,6 +5,17 @@ public class Persona {
     private int edad;
     private double altura;
 
+    public static void Saludar(){
+        System.out.println("hola ");
+    }
+
+    public static void Saludar(Persona persona){
+        System.out.println("hola " + persona.nombre);
+    }
+
+    public static void Saludar(String nombre){
+        System.out.println("hola " + nombre);
+    }
 
     @Override
     public String toString(){
