@@ -11,7 +11,7 @@ public class SensorTemperatura {
             }
             this.temperatura = temperatura;
         }
-        if (enGradosCelcius == false){
+        if (!enGradosCelcius){
             this.temperatura = temperatura * 1.8 + 32;
         }
     }
