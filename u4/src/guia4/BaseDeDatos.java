@@ -8,8 +8,8 @@ public class BaseDeDatos {
     public void eliminarEstudiante(int numero){
         listaEstudiantes.remove(numero);
     }
-    public void agregarEstudiante(int numero){
-        listaEstudiantes.remove(numero);
+    public void agregarEstudiante(Estudiante estudiante){
+        listaEstudiantes.add(estudiante);
     }
 
     @Override
